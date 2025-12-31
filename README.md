@@ -1,4 +1,5 @@
-# Planora AI
+# Planora AI - Business Planning Tool
+<!-- Deployment trigger -->
 
 A full-stack AI SaaS application that converts startup ideas into comprehensive market research and business planning documents using Hugging Face's open-source models.
 
