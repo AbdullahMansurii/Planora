@@ -124,7 +124,7 @@ export default function PlanViewPage() {
                                         key={config.id}
                                         config={config}
                                         data={planData[config.dataKey]}
-                                        loading={false}
+                                        isLoading={false}
                                     />
                                 ))}
                             </div>
