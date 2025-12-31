@@ -118,24 +118,24 @@ export default function Sidebar({ isGenerating, hasPlan }: SidebarProps) {
                                     onClick={() => !isLocked && scrollToSection(section.id)}
                                     disabled={isLocked}
                                     className={`w-full text-left px-4 py-3 rounded-lg transition-all group relative ${isCurrent
-                                            ? 'bg-primary-600/20 border-l-4 border-primary-600 shadow-lg shadow-primary-600/20'
-                                            : isCompleted
-                                                ? 'bg-primary-900/10 border-l-4 border-primary-800/50 hover:bg-primary-900/20'
-                                                : isLocked
-                                                    ? 'bg-dark-hover/30 border-l-4 border-dark-border cursor-not-allowed opacity-50'
-                                                    : 'bg-dark-hover/50 border-l-4 border-transparent hover:bg-dark-hover hover:border-primary-800/30'
+                                        ? 'bg-primary-600/20 border-l-4 border-primary-600 shadow-lg shadow-primary-600/20'
+                                        : isCompleted
+                                            ? 'bg-primary-900/10 border-l-4 border-primary-800/50 hover:bg-primary-900/20'
+                                            : isLocked
+                                                ? 'bg-dark-hover/30 border-l-4 border-dark-border cursor-not-allowed opacity-50'
+                                                : 'bg-dark-hover/50 border-l-4 border-transparent hover:bg-dark-hover hover:border-primary-800/30'
                                         }`}
                                 >
                                     <div className="flex items-center gap-3">
                                         {/* Step Number/Icon */}
                                         <div
                                             className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${isCurrent
-                                                    ? 'bg-primary-600 text-white'
-                                                    : isCompleted
-                                                        ? 'bg-primary-800/50 text-primary-300'
-                                                        : isLocked
-                                                            ? 'bg-dark-border text-text-muted'
-                                                            : 'bg-dark-border text-text-muted group-hover:bg-primary-900/30 group-hover:text-primary-400'
+                                                ? 'bg-primary-600 text-white'
+                                                : isCompleted
+                                                    ? 'bg-primary-800/50 text-primary-300'
+                                                    : isLocked
+                                                        ? 'bg-dark-border text-text-muted'
+                                                        : 'bg-dark-border text-text-muted group-hover:bg-primary-900/30 group-hover:text-primary-400'
                                                 }`}
                                         >
                                             {isCompleted ? (
@@ -157,12 +157,12 @@ export default function Sidebar({ isGenerating, hasPlan }: SidebarProps) {
                                                 <span className="text-base">{section.icon}</span>
                                                 <h3
                                                     className={`text-sm font-semibold truncate ${isCurrent
-                                                            ? 'text-primary-300'
-                                                            : isCompleted
-                                                                ? 'text-primary-400'
-                                                                : isLocked
-                                                                    ? 'text-text-muted'
-                                                                    : 'text-text group-hover:text-primary-400'
+                                                        ? 'text-primary-300'
+                                                        : isCompleted
+                                                            ? 'text-primary-400'
+                                                            : isLocked
+                                                                ? 'text-text-muted'
+                                                                : 'text-text group-hover:text-primary-400'
                                                         }`}
                                                 >
                                                     {section.title}
@@ -189,7 +189,7 @@ export default function Sidebar({ isGenerating, hasPlan }: SidebarProps) {
                     {!hasPlan && !isGenerating && (
                         <div className="mt-6 p-4 bg-primary-900/10 border border-primary-800/30 rounded-lg">
                             <p className="text-xs text-primary-300 leading-relaxed">
-                                💡 <strong>Tip:</strong> Fill out the form above and click "Generate My Business Plan" to unlock all sections
+                                💡 <strong>Tip:</strong> Fill out the form above and click &quot;Generate My Business Plan&quot; to unlock all sections
                             </p>
                         </div>
                     )}

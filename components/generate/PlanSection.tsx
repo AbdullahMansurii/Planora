@@ -290,7 +290,7 @@ export default function PlanSection({ config, data, isLoading, onEdit }: PlanSec
                         </div>
 
                         <p className="text-text-muted mb-4">
-                            Describe how you'd like to modify this section. Be specific about what changes you want.
+                            Describe how you&apos;d like to modify this section. Be specific about what changes you want.
                         </p>
 
                         <textarea
